@@ -32,7 +32,7 @@ params = {
 feature = [item[0] for item in x]
 labels = [item[1] for item in x]
 
-feature, labels, dx, y_true = np.array(feature), np.array(labels), None, None
+feature, labels = np.array(feature), np.array(labels)
 
 # Model instantiation
 net = Skipgram(params=params)
